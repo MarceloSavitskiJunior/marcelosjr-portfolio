@@ -1,0 +1,27 @@
+<section class="section trabalhos" id='trabalhos'>
+    <div class="container">
+        <div class="section-box">
+            <div class="mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="e-font titulo-secao">
+                    <span class='code-font n-titulo-secao'>02.</span> {{"Experiencia.Titulo" | translate}}
+                </h3>
+            </div>
+            <div class="janela-trabalhos" data-aos="fade-up" data-aos-duration="1000">
+              <ul ngbNav #nav="ngbNav" [(activeId)]="active" orientation="vertical" class="nav-tabs janela-trabalhos">
+                    <li *ngFor='let trabalho of "Experiencia.Trabalhos" | translate; let i = index' [title]="trabalho.Tab" [ngbNavItem]="i">
+                      <a ngbNavLink>{{ trabalho.Tab }}</a>
+                        <ng-template ngbNavContent>
+                          <h4 class='titulo-conteudo-janela'>{{trabalho.Titulo}} | <span class="conteudo-empresa-janela">{{trabalho.Tab}}</span></h4>
+                          <h5 class="tempo-trabalho">{{trabalho.Data}}</h5>
+                          <p *ngFor='let descricaoTrabalho of trabalho.Descricao; let i = index' class="descricao-trabalho"
+                          [innerHTML]="descricaoTrabalho | translate"></p>
+                          <span></span>
+                        </ng-template>
+                    </li>
+              </ul>
+              <div [ngbNavOutlet]="nav" class="mt-2"></div>
+            </div>
+
+        </div>
+    </div>
+</section>

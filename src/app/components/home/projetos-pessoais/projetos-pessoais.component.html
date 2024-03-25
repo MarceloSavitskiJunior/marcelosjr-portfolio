@@ -1,0 +1,42 @@
+<section class="section projetos-pessoais">
+    <div class="container">
+        <div class="section-box">
+            <div class="">
+                <h3 class="titulo-secao">
+                    <span class='n-titulo-secao'>3.1</span> {{"OutrosProjetos.Titulo" | translate}}
+                </h3>
+            </div>
+            <div class="mt-5">
+                <div class="row p-0">
+
+                    <div *ngFor='let projeto of "OutrosProjetos.Projetos" | translate; let i = index'
+                      (click)="redirect(projeto['demoLink'], $event)"
+                     class="col-12 col-md-6 col-lg-6 col-xl-4 col-projeto" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="box-projetos-pessoais">
+                            <div class="row w-100 text-left m-0 p-0">
+                                <div class="col-6 p-0">
+                                    <img src='assets/images/folder.svg' width="40">
+                                </div>
+                                <div class="col-6 d-flex p-0 justify-content-end">
+                                    <a *ngIf="projeto.demoLink" (click)='analyticsService.sendAnalyticEvent("click_pokemonlist_external_link", "projetos", "click")' style='color: inherit' [href]="projeto['demoLink']" target="_blank"><i id="demoLink" class="ml-3 fas fa-external-link-alt"></i></a>
+                                    <a *ngIf="projeto.ghLink" (click)='analyticsService.sendAnalyticEvent("click_pokemonlist_github", "projetos", "click")' style='color: inherit' [href]="projeto['ghLink']" target="_blank"><i id="ghLink" class="ml-4 fab fa-github"></i></a>
+                                </div>
+                                <h5 class="titulo-outro-projeto mt-4">{{projeto.Titulo}}</h5>
+                                <p class="descricao-outro-projeto">
+                                    {{projeto.Descricao}}
+                                </p>
+                            </div>
+                            <div>
+                                <ul class="tecnologias">
+                                    <li *ngFor='let tecnologias of projeto.Tecnologias'>
+                                      <span class="underline">{{tecnologias}}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

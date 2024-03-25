@@ -1,0 +1,39 @@
+<section class="section secao-tabela-clientes" [@tabelaAnimation] *ngIf='state' id='clientes'>
+    <div class="container">
+        <div class="titulo">
+            <h3 class="e-font titulo-secao">
+                <span class='code-font n-titulo-secao'>04.</span>{{ "Clientes.Titulo" | translate }}
+            </h3>
+            <p class="subtitulo-tabela-clientes subtitulo-grande">{{ "Clientes.PreTitulo" | translate }}</p>
+        </div>
+        <div class="container-tabela-clientes">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ano</th>
+                        <th>Nome</th>
+                        <th class="esconder-mobile">Localização</th>
+                        <th class="esconder-mobile">Tecnologias</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-sr-id="3" *ngFor='let cliente of "Clientes.Projetos" | translate; let i = index' [ngClass]="{'cor-verde': i % 2 !== 0, 'cor-azul': i % 2 === 0}">
+                        <td class="data-projeto">{{ cliente.Ano }}</td>
+                        <td class="titulo-projeto">{{ cliente.Nome }}</td>
+                        <td class="cliente-projeto"><span>{{ cliente.Localizacao }}</span></td>
+                        <td class="tecnologias-projeto">
+                            <div *ngFor='let tecnologia of cliente.Tecnologias'>
+                                <span [innerHTML]='tecnologia | translate'></span>
+                            </div>
+                        </td>
+                        <td class="links-projeto">
+                            <span *ngIf="cliente.CodigoFonte"><a style='color: inherit' href="{{ cliente.CodigoFonte }}"><i class="ml-4 fab fa-github"></i></a></span>
+                            <span *ngIf="cliente.Demonstracao"><a style='color: inherit' href="{{ cliente.Demonstracao }}"><i class="ml-4 fas fa-external-link-alt"></i></a></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

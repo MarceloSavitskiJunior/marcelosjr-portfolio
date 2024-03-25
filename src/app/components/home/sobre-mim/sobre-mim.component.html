@@ -1,0 +1,36 @@
+<section class="section sobre-mim" id='sobreMim'>
+    <div class="container">
+        <div class="section-box">
+            <div data-aos="fade-up">
+                <h3 class="titulo-secao">
+                    <span class='n-titulo-secao'>01.</span> {{"SobreMim.Titulo" | translate}}
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <div class="descricao-sobre-mim">
+                        <p *ngFor='let text of "SobreMim.Paragrafos" | translate' [innerHTML]="text" data-aos="fade-up" data-aos-duration="1000">
+                        </p>
+                        <ul class="lista-tecnologias" data-aos="fade-up">
+                            <li class="tecnologia" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Angular, React </span></li>
+                            <li class="tecnologia" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Elementor, Wordpress </span></li>
+                            <li class="tecnologia" data-aos="fade-up" data-aos-duration="1000"><span class="underline">HTML & (S)CSS </span></li>
+                            <li class="tecnologia" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Java, Spring Boot </span></li>
+                            <li class="tecnologia" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Python, Pandas </span></li>
+                            <li class="tecnologia" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Mockito, Karma (TDD) </span></li>
+                            <li class="tecnologia" data-aos="fade-up" data-aos-duration="1000"><span class="underline">CI / CD </span></li>
+                            <li class="tecnologia" data-aos="fade-up" data-aos-duration="1000"><span class="underline">JavaScript, TypeScript </span></li>
+                            <li class="tecnologia" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Bootstrap, Material, PrimeNG </span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-0 text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="container-img-sobre-mim">
+                        <img (click)='analyticsService.sendAnalyticEvent("click_image", "sobre-mim", "image")'  width="300" height="300" src="assets/images/me/eu2.jpg" alt="Git User">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+{
+  "name": "marcelosjr-portfolio",
+  "short_name": "marcelosjr-portfolio",
+  "theme_color": "#1d576e",
+  "background_color": "#18191c",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "assets/images/me/MJ.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}

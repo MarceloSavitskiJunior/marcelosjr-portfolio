@@ -1,0 +1,166 @@
+{
+    "Header.Item1": "About me",
+    "Header.Item2": "Experience",
+    "Header.Item3": "Projects",
+    "Header.Item4": "Clients",
+    "Header.Item5": "Contact",
+    "Header.cvBtn": "Resume",
+    "Header.curriculo": "Currículo - MarceloJunior.pdf",
+    "Apresentacao.PreTitulo": "Hello! My name is",
+    "Apresentacao.Descricao": "Creation of <span class='underline'>websites, Landing Pages, and effective technological solutions</span> for companies and businesses.",
+    "Apresentacao.ActionBtn": "Get in touch",
+    "SobreMim.Titulo": "About me",
+    "SobreMim.Paragrafos": [
+        "I have been working for <span class='underline'>over a year</span> in the field of <span class='underline'>technology and design</span> to assist companies in their evolution.",
+        "My goal is to: <div class='reflexo-container'><span class='underline'>Develop websites, Landing Pages, and technological solutions that help companies, like yours, evolve and grow.</span><div class='reflexo'></div></div>",
+        "I write clean, reusable, and scalable codes and create websites and Landing Pages, always applying good development practices and design patterns, such as design heuristics.",
+        "Here are my technologies:"
+    ],
+    "Experiencia.Titulo": "Experience",
+    "Experiencia.Trabalhos": [
+        {
+            "Tab": "Viasoft",
+            "Titulo": "Fullstack Developer",
+            "Data": "April 2023 - Present",
+            "Descricao": [
+                "Development and maintenance of a web application focused on agribusiness, using Angular, Java, Spring Boot, and MySQL.",
+                "Design Patterns, Domain-driven design, CI/CD.",
+                "Building an integration API with some project microservices, fostering collaboration between different systems.",
+                "Utilization of agile project and task management platform such as Jira and Confluence.",
+                "Development of SoftSkills within the team, in dailies, technical analysis meetings, and Business School presentations."
+            ]
+        },
+        {
+            "Tab": "Freelancer",
+            "Titulo": "Web Designer / Developer",
+            "Data": "October 2023 - Present",
+            "Descricao": [
+                "Creating websites and Landing Pages.",
+                "Maintenance on web systems.",
+                "Layout design with SASS, Bootstrap, Material, PrimeNG, among others."
+            ]
+        }
+    ],
+    "ProjetosDestaque.Titulo": "Projects I've worked on",
+    "ProjetosDestaque.Label": "Featured Project",
+    "ProjetosDestaque.Projetos": [
+        {
+            "Titulo": "Filt ERP",
+            "Descricao": "A WEB system for managing agribusiness companies, with authentication module, registrations, notifications, and routines for agribusiness.",
+            "imgs": [
+                "assets/images/filt/filt-erp.png",
+                "assets/images/filt/nota-fiscal.png"
+            ],
+            "Tecnologias": [
+                "Angular",
+                "SASS",
+                "PrimeNG",
+                "Java",
+                "Spring Boot"
+            ]
+        },
+        {
+            "Titulo": "Angucar",
+            "Descricao": "A project I did to practice website development about a car dealership.",
+            "imgs": [
+                "assets/images/angucar/tela-inicial.png",
+                "assets/images/angucar/compra-carro.png"
+            ],
+            "Tecnologias": [
+                "Angular",
+                "SCSS",
+                "PrimeNG",
+                "MockDataAPI"
+            ]
+        
+        }
+    ],
+    "OutrosProjetos.Titulo": "Personal Projects and Studies",
+    "OutrosProjetos.Projetos": [
+        {
+            "Titulo": "Angucar",
+            "Descricao": "Here's the link to access the project demonstrated above. I really liked the result and intend to practice more often with other branches! (Curiosity: the project name is the combination of the 'Angular' technology with the name 'Car' haha)",
+            "ghLink": "https://github.com/MarceloSavitskiJunior/angucar",
+            "demoLink": "https://angucar.vercel.app/home",
+            "Tecnologias": [
+                "Angular",
+                "SCSS",
+                "MockDataAPI"
+            ]
+        },
+        {
+            "Titulo": "User Registration",
+            "Descricao": "This was a project I did to train my skills in creating registration modules. The system is simple but it was a good challenge to train my skills in Java, Spring Boot, and MySQL.",
+            "ghLink": "https://github.com/MarceloSavitskiJunior/cadastro",
+            "Tecnologias": [
+                "Java",
+                "Spring Boot",
+                "ThymeLeaf",
+                "MySQL"
+            ]
+        },
+        {
+            "Titulo": "Weather App",
+            "Descricao": "A real-time weather and temperature application that queries an API to retrieve weather data from various cities around the world. This is a cool app, try using it :)",
+            "ghLink": "https://github.com/MarceloSavitskiJunior/app-clima",
+            "demoLink": "https://app-clima-marcelo.vercel.app",
+            "Tecnologias": [
+                "VueJS",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "Titulo": "Valorant Cards",
+            "Descricao": "A static page I made to put into practice knowledge of JavaScript, adapting a futuristic and dynamic layout/visual. The cards move as you hover over them.",
+            "ghLink": "https://github.com/MarceloSavitskiJunior/cards-valorant",
+            "demoLink": "https://marcelosavitskijunior.github.io/cards-valorant/",
+            "Tecnologias": [
+                "JavaScript",
+                "CSS"
+            ]
+        },
+        {
+            "Titulo": "Game: Mario Runner",
+            "Descricao": "A game of jumping obstacles with Mario. Another fun little project to spend some time :)",
+            "ghLink": "https://github.com/MarceloSavitskiJunior/gameMario",
+            "demoLink": "https://marcelosavitskijunior.github.io/gameMario/",
+            "Tecnologias": [
+                "JavaScript",
+                "CSS"
+            ]
+        },
+        {
+            "Titulo": "Gift List",
+            "Descricao": "This is the backend of a project I did to help my girlfriend organize gifts for her birthday.",
+            "ghLink": "https://github.com/MarceloSavitskiJunior/Presentes",
+            "Tecnologias": [
+                "Java",
+                "Spring Boot",
+                "H2 Database"
+            ]
+        }
+    ],
+    "Clientes.Titulo": "Satisfied Clients",
+    "Clientes.PreTitulo": "How about you become part of this list?",
+    "Clientes.Projetos": [
+        {
+            "Ano": "2024",
+            "Nome": "Portfolio - Marcelo Junior",
+            "Localizacao": "Pato Branco - PR",
+            "Tecnologias": [
+                "Angular <span class='separator'>·</span> Google Analytics 4"
+            ],
+            "CodigoFonte": "https://github.com/marcelosavitskijunior",
+            "Demonstracao": "https://marcelosavitskijunior.github.io/portfolio/"
+        }
+    ],
+    "Contato.PreTitulo": "Interested in my work?",
+    "Contato.Titulo": "Hit me up on Direct!",
+    "Contato.Conteudo": "I'll be happy to receive your contact and know that you enjoyed my work! Don't waste time and message me to position and leverage your business in the virtual world 😉. Anyway, this is my portfolio, hope you liked it.",
+    "Contato.Btn": "Send message",
+
+    "Introducao.Titulo": "Hello! My name is Marcelo Junior",
+    "Finalizacao.Titulo": "Proudly developed by Marcelo Savitski Junior"
+
+}

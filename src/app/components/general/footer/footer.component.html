@@ -1,0 +1,26 @@
+<footer>
+    <div [@animateFooter]>
+        <ul class="footer-barra-esquerda d-none d-md-block">
+            <li>
+                <a (click)='analyticsService.sendAnalyticEvent("click_github", "footer", "github")' href="https://github.com/marcelosavitskijunior" target='_blank'>
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a (click)='analyticsService.sendAnalyticEvent("click_linkedin", "footer", "github")' href="https://www.linkedin.com/in/marcelosjr/" target='_blank'>
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="footer-barra-direita d-none d-md-block">
+            <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "footer", "email")' href="mailto:marcelosavitskijunior@gmail.com" target='_blank'>marcelosavitskijunior@gmail.com</a>
+        </div>
+    </div>
+
+    <div class="creditos text-center" >
+        <a (click)='analyticsService.sendAnalyticEvent("click_github_portfolio_andresjose", "footer", "click")' href="https://www.instagram.com/dev.marcelojr" target="_blank" rel="nofollow noopener noreferrer">
+            <div>{{ "Finalizacao.Titulo" | translate }}</div>
+        </a>
+    </div>
+
+</footer>

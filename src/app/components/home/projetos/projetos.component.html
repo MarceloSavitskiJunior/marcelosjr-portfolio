@@ -1,0 +1,81 @@
+<section class="section projetos" id='projetos'>
+    <div class="container">
+        <div class="section-box">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="titulo-secao">
+                    <span class='n-titulo-secao'>03.</span> {{"ProjetosDestaque.Titulo" | translate}}
+                </h3>
+            </div>
+
+            <div *ngFor='let projeto of "ProjetosDestaque.Projetos" | translate; let i = index' class="d-flex container-projetos" data-aos="fade-up" data-aos-duration="1000">
+                <owl-carousel-o class='owl-carousel-o' [options]="customOptions" *ngIf="i%2==0">
+                    <ng-container *ngFor="let img of projeto.imgs">
+                        <ng-template carouselSlide [id]="projeto.Titulo+slide+i">
+                            <div #imgContainer class='img-container'>
+                                <img class='img-feature-projeto rounded' [src]="img" [alt]="projeto.Titulo">
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+                <div class="container-img-feature-projeto" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2==0">
+                    <div class="box-img-feature-projeto">
+                        <div class="img-container" style='width: auto;'>
+                            <img class='img-feature-projeto rounded' [src]="projeto.imgs[0]" [alt]="projeto.imgs[0]" width='600px'>
+                        </div>
+                    </div>
+                </div>
+                <div [class.informacao-direita]='i%2==0' [class.informacao-esquerda]='i%2!=0' class="h-100" style="background-image: url('{{projeto.img}}');">
+                    <div class="box-projeto">
+                        <h4 [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="feature-projeto">{{"ProjetosDestaque.Label" | translate}}</h4>
+                        <h5 [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="nome-projeto">{{projeto.Titulo}}</h5>
+
+                        <ngb-accordion #acc="ngbAccordion" class="accordion">
+                            <ngb-panel class="card-header-teste">
+                                <ng-template ngbPanelTitle>
+                                    <div class="accordion-title">
+                                        <span>Ver imagem</span>
+                                        <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbPanelContent>
+                                    <img class='img-tst rounded' [src]="projeto.imgs[0]" [alt]="projeto.Titulo">
+                                </ng-template>
+                            </ngb-panel>
+                        </ngb-accordion>
+                        <div class="box-descricao-projeto" (click)='debug()'>
+                            <p class="mb-0" [innerHTML]="projeto.Descricao">
+                            </p>
+                        </div>
+                        <ul [class.justify-content-end]='i%2==0' [class.justify-content-start]='i%2!=0' class="tecnologias">
+                            <li *ngFor='let tecnologia of projeto.Tecnologias' class="ml-3">
+                              <span class="underline technology">{{tecnologia}}</span>
+                            </li>
+                        </ul>
+                        <div [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="links">
+                            <a *ngIf="projeto['ghLink']" style='color: inherit' [href]="projeto['ghLink']" target="_blank"><i class="ml-3 fab fa-github"></i></a>
+                            <a *ngIf="projeto['demoLink']" style='color: inherit' [href]="projeto['demoLink']" target="_blank"><i class="ml-3 fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <owl-carousel-o class='owl-carousel-o' [options]="customOptions" *ngIf="i%2!=0">
+                    <ng-container *ngFor="let img of projeto.imgs">
+                        <ng-template carouselSlide [id]="projeto.Titulo+slide+i">
+                            <div class='img-container'>
+                                <img class='img-feature-projeto rounded' [src]="img" [alt]="projeto.Titulo">
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+                <div class="container-img-feature-projeto" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2!=0">
+                    <div class="box-img-feature-projeto">
+                        <div class="img-container" style='width: auto;'>
+                            <img class='img-feature-projeto rounded' [src]="projeto.imgs[0]" [alt]="projeto.imgs[0]" width='600px'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+</section>

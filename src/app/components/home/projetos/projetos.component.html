@@ -1,13 +1,13 @@
 <section class="section projetos" id='projetos'>
     <div class="container">
         <div class="section-box">
-            <div data-aos="fade-up" data-aos-duration="1000">
+            <div>
                 <h3 class="titulo-secao">
                     <span class='n-titulo-secao'>03.</span> {{"ProjetosDestaque.Titulo" | translate}}
                 </h3>
             </div>
 
-            <div *ngFor='let projeto of "ProjetosDestaque.Projetos" | translate; let i = index' class="d-flex container-projetos" data-aos="fade-up" data-aos-duration="1000">
+            <div *ngFor='let projeto of "ProjetosDestaque.Projetos" | translate; let i = index' class="d-flex container-projetos">
                 <owl-carousel-o class='owl-carousel-o' [options]="customOptions" *ngIf="i%2==0">
                     <ng-container *ngFor="let img of projeto.imgs">
                         <ng-template carouselSlide [id]="projeto.Titulo+slide+i">
@@ -17,7 +17,7 @@
                         </ng-template>
                     </ng-container>
                 </owl-carousel-o>
-                <div class="container-img-feature-projeto" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2==0">
+                <div class="container-img-feature-projeto" *ngIf="i%2==0">
                     <div class="box-img-feature-projeto">
                         <div class="img-container" style='width: auto;'>
                             <img class='img-feature-projeto rounded' [src]="projeto.imgs[0]" [alt]="projeto.imgs[0]" width='600px'>
@@ -66,7 +66,7 @@
                         </ng-template>
                     </ng-container>
                 </owl-carousel-o>
-                <div class="container-img-feature-projeto" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2!=0">
+                <div class="container-img-feature-projeto" *ngIf="i%2!=0">
                     <div class="box-img-feature-projeto">
                         <div class="img-container" style='width: auto;'>
                             <img class='img-feature-projeto rounded' [src]="projeto.imgs[0]" [alt]="projeto.imgs[0]" width='600px'>

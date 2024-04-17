@@ -1,12 +1,12 @@
 <section class="section trabalhos" id='trabalhos'>
     <div class="container">
         <div class="section-box">
-            <div class="mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="mb-5">
                 <h3 class="e-font titulo-secao">
                     <span class='code-font n-titulo-secao'>02.</span> {{"Experiencia.Titulo" | translate}}
                 </h3>
             </div>
-            <div class="janela-trabalhos" data-aos="fade-up" data-aos-duration="1000">
+            <div class="janela-trabalhos">
               <ul ngbNav #nav="ngbNav" [(activeId)]="active" orientation="vertical" class="nav-tabs janela-trabalhos">
                     <li *ngFor='let trabalho of "Experiencia.Trabalhos" | translate; let i = index' [title]="trabalho.Tab" [ngbNavItem]="i">
                       <a ngbNavLink>{{ trabalho.Tab }}</a>

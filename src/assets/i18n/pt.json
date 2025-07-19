@@ -1,27 +1,45 @@
 {
     "Header.Item1": "Sobre mim",
-    "Header.Item2": "Experiência",
+    "Header.Item2": "Carreira",
     "Header.Item3": "Projetos",
     "Header.Item4": "Clientes",
     "Header.Item5": "Contato",
     "Header.cvBtn": "Currículo",
     "Header.curriculo": "Currículo - MarceloJunior.pdf",
     "Apresentacao.PreTitulo": "Olá! Meu nome é",
-    "Apresentacao.Descricao": "Criação de <span class='underline'>sites, Landing Pages e soluções tecnológicas efetivas</span> para empresas e negócios.",
-    "Apresentacao.ActionBtn": "Entre em contato",
+    "Apresentacao.Descricao": "<span class='underline'>Desenvolvedor e empreendedor</span> aos 20 anos de idade.",
+    "Apresentacao.ActionBtn": "Conhecer mais",
     "SobreMim.Titulo": "Sobre mim",
     "SobreMim.Paragrafos": [
-        "Atuo há <span class='underline'>mais de um ano</span> na área de <span class='underline'>tecnologia e design</span> para auxiliar empresas em suas evoluções.",
-        "Meu objetivo é: <div class='reflexo-container'><span class='underline'>Desenvolver sites, Landing Pages e soluções tecnológicas que ajudem empresas, como a sua, a evoluírem e crescerem.</span><div class='reflexo'></div></div>",
-        "Escrevo clean codes, reutilizáveis e escaláveis e faço sites e Landing Pages, sempre aplicando as boas práticas e padrões de desenvolvimento, como as heurísticas de design.",
-        "Aqui estão minhas tecnologias:"
+        "Marcelo atua há <span class='underline'>mais de 4 anos</span> na área de <span class='underline'>tecnologia e empreendedorismo</span>, tendo começado com robótica no ensino médio e até conquistado o prêmio nacional do Desafio Liga Jovem - SEBRAE de 2024, estando entre uma das 20 melhores startups de jovens do Brasil.",
+        "Meu objetivo é: <div class='reflexo-container'><span class='underline'>Construir empresas inovadoras e agregadoras com base tecnológica, fazendo parte da evolução e desenvolvimento do meu país, o Brasil.</span><div class='reflexo'></div></div>",
+        "Venha fazer parte da minha história e entre em contato para realizarmos networking!",
+        "Aqui estão alguns feitos consideráveis até o momento (2025):"
     ],
-    "Experiencia.Titulo": "Experiência",
+    "SobreMim.Quotes": [
+        "Finalista de startup Desafio Liga Jovem 2024",
+        "Pódio de robótica First Tech Challenge 2023",
+        "Membro responsável pelo Comitê da Semana Acadêmica de Sistemas de Informação 2025",
+        "3° Lugar no desafio de robótica da Pato Bots em 2025"
+    ],
+    "Experiencia.Titulo": "Minha carreira! (até 2025)",
     "Experiencia.Trabalhos": [
+        {
+            "Tab": "DB1",
+            "Titulo": "Desenvolvedor Fullstack",
+            "Data": "Agosto de 2024 - Atualmente",
+            "Descricao": [
+                "Desenvolvimento e manutenção de infraestrura, criação de aplicativos mobile e aplicações web de diversas empresas, utilizando <strong>React</strong>, <strong>Angular</strong>, <strong>Java</strong>, <strong>MySQL</strong>, <strong>Postgres</strong> e vários outros.",
+                "Apadrinhamento e liderança de desenvolvedores Júniores e estagiários.",
+                "Utilização de plataforma de gerenciamento ágil de projetos e tarefas, Azure.",
+                "Aplicação de sonar em um projeto Java.",
+                "Responsabilidade e manutenção de ferramentas de deploy."
+            ]
+        },
         {
             "Tab": "Viasoft",
             "Titulo": "Desenvolvedor Fullstack",
-            "Data": "Abril de 2023 - Atualmente",
+            "Data": "Abril de 2023 - Agosto de 2024",
             "Descricao": [
                 "Desenvolvimento e manutenção de uma aplicação web voltada para o agronegócio, utilizando Angular, Java, Spring Boot e MySQL.",
                 "Design Patterns, Domain-driven design, CI / CD.",
@@ -31,7 +49,7 @@
             ]
         },
         {
-            "Tab": "Freelancer",
+            "Tab": "Freelances",
             "Titulo": "Web Designer / Desenvolvedor",
             "Data": "Outubro de 2023 - Atualmente",
             "Descricao": [
@@ -46,7 +64,7 @@
     "ProjetosDestaque.Projetos": [
         {
             "Titulo": "Filt ERP",
-            "Descricao": "Um sistema WEB para gestão de empresas do agronegócio, com módulo de autenticação, cadastros, notificações e rotinas para o agro.",
+            "Descricao": "Agrotech com um sistema WEB para gestão de empresas do agronegócio, com módulo de autenticação, cadastros, notificações e rotinas para o agro.",
             "imgs": [
                 "assets/images/filt/filt-erp.png",
                 "assets/images/filt/nota-fiscal.png"
@@ -60,16 +78,46 @@
             ]
         },
         {
-            "Titulo": "Angucar",
-            "Descricao": "Projeto que fiz para praticar desenvolvimento de sites sobre uma loja de carros.",
+            "Titulo": "DUCZ Benefícios",
+            "Descricao": "Fintech com uma plataforma WEB para o RH e Dono do negócio, que entrega um aplicativo e um cartão físico/virtual para compras e transações monetárias de colaboradores.",
             "imgs": [
-                "assets/images/angucar/tela-inicial.png",
-                "assets/images/angucar/compra-carro.png"
+                "assets/images/ducz/ducz-oqueeh.jpeg",
+                "assets/images/ducz/ducz-home.jpeg"
             ],
             "Tecnologias": [
+                "Kotlin",
+                "React Native",
+                "React",
+                "Docker",
+                "Spring Boot"
+            ]
+        },
+        {
+            "Titulo": "Anymarket",
+            "Descricao": "Retailtech dona de um hub WEB, anunciador, precificador e realizador de várias ações automáticas em produtos anunciados em diversos marketplaces, reduzindo a dificuldade de gestão de donos de e-commerce.",
+            "imgs": [
+                "assets/images/anymarket/any-integracoes.jpeg",
+                "assets/images/anymarket/any-home.jpeg"
+            ],
+            "Tecnologias": [
+                "Java",
                 "Angular",
-                "SCSS",
-                "PrimeNG",
+                "Docker",
+                "Kubernetes",
+                "Spring Boot"
+            ]
+        },
+        {
+            "Titulo": "Brisa Multimarcas - Site",
+            "Descricao": "Site que fiz para a loja de carros do meu pai, aproveitando o projeto final de uma matéria da faculdade.",
+            "imgs": [
+                "assets/images/brisa/brisa-home.jpeg",
+                "assets/images/brisa/brisa-estoque.jpeg"
+            ],
+            "Tecnologias": [
+                "Html",
+                "Css",
+                "Javascript",
                 "MockDataAPI"
             ]
         
@@ -79,7 +127,7 @@
     "OutrosProjetos.Projetos": [
         {
             "Titulo": "Angucar",
-            "Descricao": "Aqui está o link para acessar o projeto que foi demonstrado acima. Gostei muito do resultado e pretendo praticar mais vezes com outros ramos! (Curiosidade: o nome do projeto é a junção da tecnlogia 'Angular' com o nome 'Car' haha)",
+            "Descricao": "Este é um site que fiz no início da minha jornada na programação. Gostei muito do resultado e pretendo praticar mais vezes com outros ramos! (Curiosidade: o nome do projeto é a junção da tecnologia 'Angular' com o nome 'Car' haha)",
             "ghLink": "https://github.com/MarceloSavitskiJunior/angucar",
             "demoLink": "https://angucar.vercel.app/home",
             "Tecnologias": [
@@ -89,14 +137,26 @@
             ]
         },
         {
-            "Titulo": "Cadastro de Usuários",
-            "Descricao": "Esse foi um projeto que fiz para treinar meus conhecimentos em criação de módulos de cadastros. O sistema é simples, mas foi um bom desafio para treinar minhas habilidades em Java, Spring Boot e MySQL",
-            "ghLink": "https://github.com/MarceloSavitskiJunior/cadastro",
+            "Titulo": "Casa Inteligente com MQTT",
+            "Descricao": "Projeto feito em sala de aula para desenvolver um sistema de casa inteligente, que liga leds de acordo com a resposta recebida de um modelo de mensageria.",
+            "ghLink": "https://github.com/MarceloSavitskiJunior/ProjetoMQTT",
             "Tecnologias": [
-                "Java",
-                "Spring Boot",
-                "ThymeLeaf",
-                "MySQL"
+                "C++",
+                "NodeMCU ESP8266",
+                "Broker Mosquitto",
+                "MQTT Explorer",
+                "PubSubClient"
+            ]
+        },
+        {
+            "Titulo": "Lixeira Inteligente com Python",
+            "Descricao": "Projeto feito em sala de aula para desenvolver um sistema de lixeira inteligente, que detecta a quantidade de lixo e envia esses dados para uma aplicação web que armazena em um gráfico a porcentagem de espaço utilizada na lixeira.",
+            "ghLink": "https://github.com/MarceloSavitskiJunior/ProjetoMQTT",
+            "Tecnologias": [
+                "Python",
+                "NodeMCU ESP32",
+                "Plataforma Thing Speak",
+                "Flask"
             ]
         },
         {
@@ -129,16 +189,6 @@
                 "JavaScript",
                 "CSS"
             ]
-        },
-        {
-            "Titulo": "Lista de Presentes",
-            "Descricao": "Esse é o backend de um projeto que fiz para auxiliar minha namorada na organização de presentes para o aniversário dela.",
-            "ghLink": "https://github.com/MarceloSavitskiJunior/Presentes",
-            "Tecnologias": [
-                "Java",
-                "Spring Boot",
-                "H2 Database"
-            ]
         }
     ],
     "Clientes.Titulo": "Clientes satisfeitos",
@@ -155,9 +205,9 @@
             "Demonstracao": "https://marcelosavitskijunior.github.io/portfolio/"
         }
     ],
-    "Contato.PreTitulo": "Ficou interessado no meu trabalho?",
-    "Contato.Titulo": "Chama no Direct!",
-    "Contato.Conteudo": "Ficarei feliz em receber seu contato e saber que curtiu meu trabalho! Não perca tempo e me chame para posicionar e alavancar seu negócio no meio virtual 😉. Enfim, esse é meu portfólio, espero que tenha gostado.",
+    "Contato.PreTitulo": "E aí? Curtiu meu portfólio?",
+    "Contato.Titulo": "Se conecte comigo e vamos bater um papo!",
+    "Contato.Conteudo": "Ficarei feliz em receber seu contato e saber que curtiu meu trabalho! 😉. Enfim, esse é meu portfólio e espero que tenha gostado.",
     "Contato.Btn": "Enviar mensagem",
 
     "Introducao.Titulo": "Olá! Meu nome é",

@@ -7,7 +7,7 @@
                 </div>
                 <div class='banner-title'>
                     <h2>Marcelo Junior.</h2>
-                    <h3>Web Developer / Designer</h3>
+                    <h3>Web/App Developer</h3>
                 </div>
                 <div class='descricao-banner'>
                     <p [innerHTML]='"Apresentacao.Descricao" | translate' class="mt-4"></p>
@@ -15,7 +15,7 @@
             </div>
 
             <div class="btn-banner">
-                <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "banner", "email")' href="https://ig.me/m/dev.marcelojr" target="_black" class="main-btn">
+                <a (click)='scroll("sobreMim")' class="main-btn">
                     {{"Apresentacao.ActionBtn" | translate}}
                 </a>
             </div>
